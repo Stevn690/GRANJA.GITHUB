@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GRANJA AGRICOLA. ASCM</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #dfefff, #b3cde0);
+      overflow-y: scroll;
+      box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: double 5px #357e23;
+      background-color: rgb(248, 248, 248);
+    }
+    header img {
+      height: 80px;
+      filter: grayscale(30%) drop-shadow(2px 2px 5px gray);
+      transform: rotateY(10deg);
+      transition: transform 1s ease;
+    }
+    header img:hover {
+      transform: rotateY(360deg);
+    }
+    header h1 {
+      background: linear-gradient(90deg, #015305, #fbff02fd);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 2em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px;
+      background-color: #18810a;
+      border: double 4px #ffe601;
+    }
+    nav a {
+         color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #ccc900;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #55ff06;
+      transform: scale(1.1);
+    }
+    section {
+  margin: 30px;
+      padding: 20px;
+      background-color: rgb(220, 235, 8);
+      border: double 4px #3bff14;
+      box-shadow: inset 0 0 20px rgb(47, 207, 7);
+      transform: perspective(800px) rotateY(2deg);
+      transition: transform 0.5s ease;
+    }
+    section:hover {
+      transform: perspective(800px) rotateX(0deg);
+    }
+    .content-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .content-row img {
+      width: 600px;
+      filter: sepia(20%) brightness(1.1);
+    }
+    .description {
+      max-width: 400px;
+      color: #000000;
+    }
+    section h2 {
+      color: #803a00;
+    }
+    footer {
+        text-align: center;
+      padding: 15px;
+      background-color: #18810a;
+      color: #f8f8f8;
+      border-top: double 4px #ffe601;;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="granja logo.jpg" alt="Logo del Sindicato" />
+    <h1>Galería y Multimedia</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Agricultora</a>
+    <a href="camione.html">Turismo</a>
+    <a href="camioness.html">Ganadera</a>
+    <a href="caratula.html">Inicio</a>
+  </nav>
+  <section id="imagen2">
+    <h2>Granja Turistica</h2>
+    <div class="content-row">
+      <img src="uris.jpg" alt="Licencia Tipo D" />
+      <div class="description">
+        <p>El turismo rural en granjas, conocido también como agroturismo, ofrece una variedad de experiencias que combinan la naturaleza, la agricultura y la cultura rural. Estas experiencias incluyen actividades como caminatas, observación de aves, contacto con animales, participación en tareas agrícolas, y la degustación de productos locales. </p>
+        <p>Actividades al aire libre: Caminatas por senderos rurales, paseos a caballo, ciclismo de montaña. 
+</p><p>Observación de la naturaleza: Avistamiento de aves, flora y fauna local. </p><p>Contacto con animales: Interacción con animales de granja, como vacas, ovejas, gallinas, entre otros. </p><p>Participación en tareas agrícolas: Recolección de huevos, ordeño de vacas, cosecha de productos, entre otras. </p><p>Aprender sobre agricultura sostenible: Conocer de primera mano cómo se producen los alimentos, la importancia de la agricultura ecológica, y la gestión sostenible de los recursos naturales. </p><p>Ecoturismo: Observación de la naturaleza, respeto por el medio ambiente, y la promoción de prácticas sostenibles. </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+     &copy; 2025 LA GRANJA AGRICOLA. ASCM Todos los derechos reservados.
+  </footer>
+</body>
+</html>

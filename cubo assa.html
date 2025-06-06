@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cubo con imagen en todas las caras</title>
+  <style>
+    body {
+      perspective: 1000px;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #eeff01, #048104, #fffb00);
+      flex-direction: column;
+    }
+    .scene {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg) rotateY(0deg);
+      transition: transform 10s;
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      backface-visibility: hidden;
+    }
+
+    .face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Caras del cubo */
+    .front  { transform: rotateY(0deg) translateZ(100px); }
+    .back   { transform: rotateY(180deg) translateZ(100px); }
+    .right  { transform: rotateY(90deg) translateZ(100px); }
+    .left   { transform: rotateY(-90deg) translateZ(100px); }
+    .top    { transform: rotateX(90deg) translateZ(100px); }
+    .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+    body:hover .cube {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+
+    /* Botón de regreso fijo abajo */
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 25px;
+      background-color: #056d1c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #d3e200;
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="cube">
+      <div class="face front"><img src="granja logo casa.avif" alt="Imagen"></div>
+      <div class="face back"><img src="granja logo casa.avif" alt="Imagen"></div>
+      <div class="face right"><img src="granja logo casa.avif" alt="Imagen"></div>
+      <div class="face left"><img src="granja logo casa.avif" alt="Imagen"></div>
+      <div class="face top"><img src="granja logo casa.avif" alt="Imagen"></div>
+      <div class="face bottom"><img src="granja logo casa.avif" alt="Imagen"></div>
+    </div>
+  </div>
+
+  <!-- Botón fijo abajo -->
+  <a href="caratula.html" class="back-button">Regresar</a>
+</body>
+</html>

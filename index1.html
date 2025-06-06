@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tipos de Carrocerías</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(135deg,  #eeff01, #048104, #fffb00);
+    }
+
+    header {
+            width: 100%;
+      text-align: center;
+      padding: 20px;
+      border-bottom: double 5px #158000;
+      background-color: white;
+    }
+
+    header img {
+      height: 80px;
+      filter: grayscale(30%) drop-shadow(2px 2px 5px gray);
+      transform: rotateY(10deg);
+      transition: transform 1s ease;
+    }
+
+    header img:hover {
+      transform: rotateY(360deg);
+    }
+
+    header h1 {
+       background: linear-gradient(90deg, #015305, #fbff02fd);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 2em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px;
+      background-color: #18810a;
+      border: double 4px #ffe601;
+    }
+
+    nav a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #ccc900;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+   background-color: #55ff06;
+      transform: scale(1.1);
+    }
+
+    .animated-box {
+      width: 120px;
+      height: 120px;
+      margin: 40px 0;
+      background-color: rgb(86, 13, 119);
+      position: relative;
+      animation: example 4s infinite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    @keyframes example {
+      0% {
+        background-color: rgb(38, 11, 134);
+        left: 0px;
+        top: 0px;
+        transform: rotate(50deg);
+      }
+      25% {
+        background-color: rgb(68, 104, 172);
+        left: 200px;
+        top: 0px;
+        color: rgb(26, 199, 69);
+      }
+      50% {
+        background-color: rgb(0, 238, 255);
+        left: 200px;
+        top: 200px;
+        color: rgb(31, 14, 107);
+      }
+      75% {
+        background-color: rgb(111, 207, 32);
+        left: 0px;
+        top: 200px;
+        color: rgb(204, 22, 180);
+      }
+      100% {
+        background-color: rgb(126, 207, 20);
+        left: 0px;
+        top: 0px;
+        color: rgb(209, 32, 32);
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <img src="granja logo.jpg" alt="Logo del Sindicato" />
+        <h1>GRANJA AGRICOLA .ASCM</h1>
+        <p>Comprometidos con la excelencia y profesionalismo desde 1960</p>
+      </header>
+
+  <nav>
+
+    <a href="index.html">Ofrece</a> 
+    <a href="#contacto">Contactos</a>
+    <a href="index1.html">Animacion 3D</a>
+    <a href="cubo assa.html">Cubo Granja</a>
+    <a href="caratula.html">Inicio</a>
+  </nav>
+
+   <style>
+        /* Contenedor de cada imagen */
+        .transform {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 1s;
+        }
+
+        /* Establece el origen de la transformación */
+        .origin1 { transform-origin: 0 0; }
+        .origin2 { transform-origin: 100% 0; }
+
+        /* Imagen dentro del contenedor */
+        .transform img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Efecto al pasar el ratón */
+        .transform:hover {
+            transform: rotate(30deg) translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="transform">
+        <img src="grana.webp" alt="Imagen 1">
+    </div>
+    <div class="transform origin1">
+        <img src="granana.jpg" alt="Imagen 2">
+    </div>
+    <div class="transform origin2">
+        <img src="ovejas.jpeg" alt="Imagen 3">
+    </div>
+</body>
+</html>
